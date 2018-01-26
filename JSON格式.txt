@@ -1,0 +1,20 @@
+
+TBOVehicleMgr::AnalyResOfLogin:back json is {"code":"S00","count":1,"userList":[{"accessToken":"IhcjQdkKgbVsV6jRnhUcJOYcSX22LrnJwO1lAYYmsuaorZu5VPZeKq","expires":600,"loginName":"nana","refreshToken":"tGzv3JOkF0XG5Qx2TlKWIA"}]}
+
+
+TBOVehicleMgr::AddVehicle::Send json is {"accesstoken":"tGzv3JOkF0XG5Qx2TlKWIA","vehicleList":[{"VIN":"8888888888888888","engineNum":"0000","name":"雪佛兰","slsId":"0000","slsOemId":"0000","tboxId":"0000","tcpId":"0000","type":"轿跑","vcpId":"0000","veaId":"0000"}]}
+
+T
+TBOVehicleMgr::AddVehicleLogicInfo::Send json is {"VIN":"8888888888888888","accessToken":"tGzv3JOkF0XG5Qx2TlKWIA","vehicleInfoList":[{"inappUpFlag":1,"slsFunction":1,"slsSoftVer":"0.0.0.1","tboxPhoneNum":"13917707069"}]}
+
+
+TBOVehicleMgr::AnalyResOfAddLogicInfo:back json is {"code":"S00","count":1,"vehicleInfoList":[{"inappUpFlag":0,"slsFunction":8,"slsSoftVer":"10.0.1.2","tboxPhoneNum":"044-580-3453","vehicleInfoId":1}]}
+
+TBOVehicleMgr::AddVehicleAirInfo::Send json is {"VIN":"8888888888888888","accessToken":"tGzv3JOkF0XG5Qx2TlKWIA","airconList":[{"HVACACSwitchAvail":0,"HVACAutoModeAvail":0,"HVACClimateModeAvail":0,"HVACClimateZoneType":0,"HVACFrontBlowerModes":0,"HVACFrontFanSpeed":0,"HVACFrontHighestTemp":0,"HVACFrontLowestTemp":0,"HVACFrontMaxFanSpeed":0,"HVACFrontTempStepVal":0,"HVACLonizerAvail":0,"HVACMasterPowerAvail":0,"HVACRearBlowerModes":0,"HVACRearFanSpeed":0,"HVACRearHighestTemp":0,"HVACRearLowestTemp":0,"HVACRearMaxFanSpeed":0,"HVACRearTempStepVal":0,"HVACSyncModeAvail":0}]}
+
+
+TBOVehicleMgr::AnalyResOfAddAirInfo:back json is {"airconList":[{"HVACACSwitchAvail":1,"HVACAutoModeAvail":1,"HVACClimateModeAvail":1,"HVACClimateZoneType":1,"HVACFrontBlowerModes":1,"HVACFrontFanSpeed_0_Avail":1,"HVACFrontHighestTemp":1,"HVACFrontLowestTemp":1,"HVACFrontMaxFanSpeed":1,"HVACFrontTempStepVal":1,"HVACLonizerAvail":1,"HVACMasterPowerAvail":1,"HVACRearBlowerModes":1,"HVACRearFanSpeed_0_Avail":1,"HVACRearHighestTemp":1,"HVACRearLowestTemp":1,"HVACRearMaxFanSpeed":1,"HVACRearTempStepVal":1,"HVACSyncModeAvail":1,"aiconId":1}],"code":"S00","count":1}
+
+
+TBOVehicleMgr::AnalyResOfRefreshToken:back json is {"code":"S00","count":1,"userList":[{"expires":600,"loginName":"nana","refreshToken":"czZCaGRSa3F0MzpnWDFQ"}]}
+
