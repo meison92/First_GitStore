@@ -1,0 +1,190 @@
+Lak&eR4g
+
+sudo git push origin k4
+sudo git push origin k4daily
+sudo git push origin k226
+sudo git push origin k226daily
+sudo git push origin dlvr_k
+ 
+sudo cp /mnt/hgfs/D/GitCommit/ServiceApps/ ./ -r
+ 
+7E52DF07C6F8F5B8
+
+rm -fr .git  
+git init  
+git remote add origin http://user_c01@222.73.27.185/git/ngi20_linux.git  
+git fetch  
+git reset --hard origin/master  
+git branch --set-upstream-to=origin/master master   
+
+git������ز�����
+1��2.0����Ҫ�ύlinux��k4 ��k4daily��֧�� android��master��daily��֧
+2���ύǰ��Ҫ�����ش����ȸ��µ�����
+���磺
+sudo git checkout k4��k4��Ҫ�ύ�ķ�֧��
+sudo git clean -df
+sudo git checkout . 
+sudo git reset HEAD �Chard
+sudo git pull
+��Ҫ�ύ���뿽������ӦĿ¼
+sudo git add --all
+sudo git commit --m "add release"
+sudo git push origin k4
+sudo git push origin k4daily
+sudo git push origin k226
+sudo git push origin k226daily
+sudo git push origin iver
+
+gitk
+
+�����ύ��git push��
+	git log --oneline  -3
+	git revert 00ce4da -3
+	git log --oneline -3
+	git push 
+	
+����git commit ���ύ
+git reset --soft HEAD^  ��ָ��commit ID
+
+����git add ���ύ
+git reset [HEAD] --<filename>
+git reset [HEAD] . ��������add�ı��
+
+���ع��������б��
+git checkout --<filename>
+git checkout .     �������й��������
+
+����git push ���ύ
+git reset --hard  commitID��HEADָ���λ�ã� =  ȫ������(ɾ���ݴ�����������&����ȥ���б��) 
+
+
+
+��ȡָ���ύ���ļ�
+
+1. ����tag
+# ����������ǩ  -�ύ���������
+	git tag MPM-0.5.0.0-light
+
+# ������ע��ǩ  -��������
+	git tag -a MPM-0.5.0.0 -m ��0.5.0.0�汾��
+
+#��ָ��commit-id����tag
+	git tag -a MPM-0.5.0.0 9fbc3d0
+
+#�鿴��ǩ��Ϣ
+	git tal -l
+	git show MPM-0.5.0.0
+	
+#ɾ��tag��Ϣ
+ git tag -d MPM-0.5.0.0
+ 
+ͨ����git push���Ὣ��ǩ�����ύ��git��������������Ҫ������ʽ�Ĳ�����
+	git push origin k226daily MPM-0.5.0.0      	��MPM-0.5.0.0��ǩ�ύ��git������
+	git push origin k226daily �Ctags 			���������б�ǩһ�����ύ��git������
+
+2.��ȡtag
+git fetch
+git checkout MPM-0.5.0.0
+
+#������ѹ��Ϊ zip ��ʽ:
+	git archive --format=zip --output=MPM-0.5.0.0.zip MPM-0.5.0.0
+
+#������ѹ��Ϊ tar.bz2 ��ʽ:
+	git archive MPM-0.5.0.0| bzip2 > MPM-0.5.0.0.tar.bz2
+	
+#������ѹ��Ϊ tar.gz ��ʽ:
+	git archive --format=tar MPM-0.5.0.0 | gzip > MPM-0.5.0.0.tar.gz
+
+
+
+
+
+
+
+
+
+
+
+�鿴Android�Ƿ񻹻���
+LayManagerCtrl get surface
+
+
+
+
+��װgit	$ sudo apt-get install git
+ 	 
+����git�û���				$ git config --global user.name  "Your.Name"
+����git�û�����				$ git config --global user.email "Your.Name@address.com"
+����git�ϴ��ļ���С����		$ git config --global http.postBuffer 524288000
+��¡�����زֿ�	 			$ sudo git clone http://user_c01@222.73.27.185/git/ngi20_linux.git
+�鿴��֧					git branch
+�л���֧					git checkout master
+��Զ�̷�����ͬ�����´���	git pull
+���ӱ��ص�һ���ļ��޸ĵ��ݴ���	git add readme.txt
+�ύĿǰ�ݴ����е��޸ĵ�������	git commit -m "modify readme.txt"
+���͵�Զ�̷�����	git push origin master
+
+
+=========================================================
+
+Navi������������
+��һ����
+20160723_SGM_328_Pro_V1.0.030000.0104��ѹ
+
+Navi
+__noplay__
+AppName.txt
+
+�����ļ�������SD����Ŀ¼
+
+�ڶ�����
+ngi_vde_15Q4_20160715��ѹ
+
+ngi_vde
+
+������SD����Ŀ¼
+
+
+��������
+V33.3.030001.0004(ȫ��)��ѹ
+������SD��Ŀ¼��H:\Navi\bin\UIRes\navidata\data
+
+���Ĳ���
+20160810_sgm-k256_V1.0.030000.0001_For_Testing_1.7z
+�滻sd���еĶ�Ӧ�ļ�
+
+
+
+==================================================================
+1.�鿴Զ�̷�֧
+git branch -r
+
+2.����git clone romete��ֻ��cloneԶ��remote��master������clone������Ŀ¼
+
+------------------------------------------------------
+
+3.�鿴���з�֧
+git branch -a
+
+------------------------------------------------
+
+�ܿ�������Զ�̵ķ�֧branch
+
+4.��checkout�����Զ�̷�֧ȡ�����أ����Զ�����tracking
+git checkout -b localBranch origin/branchName # �Ƽ�ʹ��������
+
+# ���ܵ���git checkout -b localBranch �����ڱ��ش���һ����֧�������ǻ�ȡԶ�̷�֧
+
+
+//�� �鿴bending�ļ�Ŀ¼
+����
+
+ʹ��-t��������Ĭ�ϻ��ڱ��ؽ���һ����Զ�̷�֧����һ���ķ�֧
+git checkout -t origin/branchName
+
+����
+
+Ҳ��ʹ��fetch����
+git fetch origin remoteBranchName:localBranchName
+
+# ץȡԶ�̷�֧�����ݵ����ض�Ӧ�ķ�֧
